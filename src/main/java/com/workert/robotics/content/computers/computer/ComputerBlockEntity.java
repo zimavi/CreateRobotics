@@ -16,7 +16,7 @@ public class ComputerBlockEntity extends KineticTileEntity {
 	private String terminal = "";
 	private boolean running = false;
 
-	public final RoboScript roboScript;
+	private final RoboScript roboScript;
 
 	public ComputerBlockEntity(BlockEntityType<?> type, BlockPos blockPos, BlockState blockState) {
 		super(type, blockPos, blockState);
