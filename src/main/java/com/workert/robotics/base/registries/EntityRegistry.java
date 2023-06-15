@@ -2,12 +2,6 @@ package com.workert.robotics.base.registries;
 
 import com.tterrag.registrate.util.entry.EntityEntry;
 import com.workert.robotics.Robotics;
-import com.workert.robotics.content.robotics.clockcopter.Clockcopter;
-import com.workert.robotics.content.robotics.clockcopter.ClockcopterRenderer;
-import com.workert.robotics.content.robotics.codedrone.CodeDrone;
-import com.workert.robotics.content.robotics.codedrone.CodeDroneRenderer;
-import com.workert.robotics.content.robotics.miner.Miner;
-import com.workert.robotics.content.robotics.miner.MinerRenderer;
 import com.workert.robotics.content.utility.extendoboots.ExtendOBoots;
 import com.workert.robotics.content.utility.extendoboots.ExtendOBootsRenderer;
 import net.minecraft.world.entity.Mob;
@@ -18,7 +12,7 @@ public class EntityRegistry {
 	public static void register() {
 	}
 
-	public static final EntityEntry<Clockcopter> CLOCKCOPTER = Robotics.REGISTRATE
+	/*public static final EntityEntry<Clockcopter> CLOCKCOPTER = Robotics.REGISTRATE
 			.entity("clockcopter", Clockcopter::new, MobCategory.MISC)
 			.lang("Clockcopter")
 			.properties(properties -> properties.sized(0.9f, 1f))
@@ -48,7 +42,7 @@ public class EntityRegistry {
 					.add(Attributes.MAX_HEALTH, 1.0D)
 					.add(Attributes.FLYING_SPEED, 0.8F))
 			.renderer(() -> CodeDroneRenderer::new)
-			.register();
+			.register();*/
 
 	public static final EntityEntry<ExtendOBoots> EXTEND_O_BOOTS = Robotics.REGISTRATE
 			.entity("extend_o_boots", ExtendOBoots::new, MobCategory.MISC)

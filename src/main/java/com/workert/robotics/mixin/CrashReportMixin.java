@@ -1,6 +1,6 @@
 package com.workert.robotics.mixin;
 
-import com.workert.robotics.helpers.TelemetryHelper;
+
 import net.minecraft.CrashReport;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -18,6 +18,6 @@ public abstract class CrashReportMixin {
 
 	@Inject(method = "saveToFile", at = @At(value = "RETURN"))
 	private void saveToFile(File pToFile, CallbackInfoReturnable<Boolean> cir) {
-		TelemetryHelper.sendCrashReport(this.getFriendlyReport());
+		//TelemetryHelper.sendCrashReport(this.getFriendlyReport());
 	}
 }

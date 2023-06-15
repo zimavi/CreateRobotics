@@ -4,7 +4,6 @@ import com.simibubi.create.AllTags;
 import com.simibubi.create.content.AllSections;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.workert.robotics.Robotics;
-import com.workert.robotics.content.robotics.BaseRobotItem;
 import com.workert.robotics.content.utility.extendoboots.ExtendOBootsItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -66,11 +65,11 @@ public class ItemRegistry {
 					.rarity(Rarity.UNCOMMON))
 			.register();
 
-	public static final ItemEntry<BaseRobotItem> CLOCKCOPTER = Robotics.REGISTRATE
+	/*public static final ItemEntry<BaseRobotItem> CLOCKCOPTER = Robotics.REGISTRATE
 			.item("clockcopter", BaseRobotItem::new)
 			.lang("Clockcopter")
 			.onRegister(item -> item.setEntity(EntityRegistry.CLOCKCOPTER))
-			.register();
+			.register();*/
 
 
 	/*public static final ItemEntry<BaseRobotItem> MINER = Robotics.REGISTRATE
@@ -78,11 +77,11 @@ public class ItemRegistry {
 			.onRegister(item -> item.setEntity(() -> EntityList.MINER.get()))
 			.register();*/
 
-	public static final ItemEntry<BaseRobotItem> CODE_DRONE = Robotics.REGISTRATE
+	/*public static final ItemEntry<BaseRobotItem> CODE_DRONE = Robotics.REGISTRATE
 			.item("code_drone", BaseRobotItem::new)
 			.lang("Juan")
 			.onRegister(item -> item.setEntity(EntityRegistry.CODE_DRONE))
-			.register();
+			.register();*/
 
 	public static final ItemEntry<ExtendOBootsItem> EXTEND_O_BOOTS = Robotics.REGISTRATE
 			.item("extend_o_boots",

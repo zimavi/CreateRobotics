@@ -5,8 +5,6 @@ import com.simibubi.create.foundation.item.TooltipHelper;
 import com.simibubi.create.foundation.ponder.PonderRegistrationHelper;
 import com.workert.robotics.Robotics;
 import com.workert.robotics.base.registries.ItemRegistry;
-import com.workert.robotics.content.robotics.clockcopter.ClockcopterModel;
-import com.workert.robotics.content.robotics.miner.MinerModel;
 import com.workert.robotics.content.utility.extendoboots.ExtendOBootsModel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -29,8 +27,8 @@ public class ClientHandler {
 	}
 
 	public static void registerLayerDefinition(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ClockcopterModel.LAYER_LOCATION, ClockcopterModel::createBodyLayer);
-		event.registerLayerDefinition(MinerModel.LAYER_LOCATION, MinerModel::createBodyLayer);
+		//event.registerLayerDefinition(ClockcopterModel.LAYER_LOCATION, ClockcopterModel::createBodyLayer);
+		//event.registerLayerDefinition(MinerModel.LAYER_LOCATION, MinerModel::createBodyLayer);
 		event.registerLayerDefinition(ExtendOBootsModel.LAYER_LOCATION, ExtendOBootsModel::createBodyLayer);
 	}
 

@@ -15,7 +15,6 @@ import com.workert.robotics.content.computers.computer.TerminalDisplaySource;
 import com.workert.robotics.content.computers.inputs.InputBlockItem;
 import com.workert.robotics.content.computers.inputs.redstonedetector.RedstoneDetectorBlock;
 import com.workert.robotics.content.computers.inputs.scanner.ScannerBlock;
-import com.workert.robotics.content.robotics.codeeditor.CodeEditorBlock;
 import com.workert.robotics.unused.smasher.SmasherBlock;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -123,7 +122,7 @@ public class BlockRegistry {
 			.simpleItem()
 			.register();
 
-	public static final BlockEntry<CodeEditorBlock> CODE_EDITOR = Robotics.REGISTRATE.block("code_editor",
+	/*public static final BlockEntry<CodeEditorBlock> CODE_EDITOR = Robotics.REGISTRATE.block("code_editor",
 					CodeEditorBlock::new)
 			.lang("Code Editor")
 			.blockstate((dataGenContext, provider) -> provider.horizontalBlock(dataGenContext.get(),
@@ -133,7 +132,7 @@ public class BlockRegistry {
 					.sound(SoundType.WOOD)
 					.noOcclusion())
 			.simpleItem()
-			.register();
+			.register();*/
 
 	public static final BlockEntry<ComputerBlock> COMPUTER = Robotics.REGISTRATE
 			.block("computer", ComputerBlock::new)
