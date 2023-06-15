@@ -1,4 +1,4 @@
-package com.workert.robotics.content.robotics.clockcopter.goals;
+package com.workert.robotics.content.robotics.old.clockcopter.goals;
 
 import net.minecraft.world.entity.OwnableEntity;
 import net.minecraft.world.entity.PathfinderMob;
